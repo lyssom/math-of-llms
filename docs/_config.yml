@@ -1,6 +1,8 @@
-theme: minima
+remote_theme: jekyll/minima
 
 markdown: kramdown
 
 kramdown:
   math_engine: mathjax
+
+title: 大模型中的数学
