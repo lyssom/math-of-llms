@@ -9,4 +9,4 @@ title: 大模型中的数学
 
 ## 第一章 线性代数基础
 
-- [1.1 向量与向量加法](chapter01/01-vector.html)
+- [1.1 线性代数与张量运算](chapter01/01-vector.html)
