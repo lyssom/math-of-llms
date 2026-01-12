@@ -1,0 +1,87 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="iu5cK-5DjC9GCs2ArDQ-">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="概率分布演化关系图" vertex="1">
+          <mxGeometry height="40" width="400" x="200" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-2" parent="1" style="swimlane;startSize=30;whiteSpace=wrap;html=1;rounded=1;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="离散分布" vertex="1">
+          <mxGeometry height="320" width="390" x="14" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-3" parent="Q8QMjd43RHZUG_M_Kel2-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="伯努利分布&lt;br/&gt;Bernoulli(p)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-4" parent="Q8QMjd43RHZUG_M_Kel2-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="二项分布&lt;br/&gt;Binomial(n,p)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-5" parent="Q8QMjd43RHZUG_M_Kel2-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="类别分布&lt;br/&gt;Categorical(p₁...pₖ)" vertex="1">
+          <mxGeometry height="60" width="160" x="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-6" parent="Q8QMjd43RHZUG_M_Kel2-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="多项分布&lt;br/&gt;Multinomial(n,p₁...pₖ)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-7" edge="1" parent="1" source="Q8QMjd43RHZUG_M_Kel2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Q8QMjd43RHZUG_M_Kel2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-8" edge="1" parent="1" source="Q8QMjd43RHZUG_M_Kel2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Q8QMjd43RHZUG_M_Kel2-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-9" edge="1" parent="1" source="Q8QMjd43RHZUG_M_Kel2-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Q8QMjd43RHZUG_M_Kel2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-10" parent="1" style="swimlane;startSize=30;whiteSpace=wrap;html=1;rounded=1;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="连续分布" vertex="1">
+          <mxGeometry height="320" width="370" x="444" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-11" parent="Q8QMjd43RHZUG_M_Kel2-10" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="均匀分布&lt;br/&gt;Uniform(a,b)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-12" parent="Q8QMjd43RHZUG_M_Kel2-10" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="指数分布&lt;br/&gt;Exponential(λ)" vertex="1">
+          <mxGeometry height="60" width="160" x="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-13" parent="Q8QMjd43RHZUG_M_Kel2-10" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="高斯分布&lt;br/&gt;N(μ, σ²)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-14" parent="Q8QMjd43RHZUG_M_Kel2-10" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="多元高斯&lt;br/&gt;N(μ, Σ)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-15" edge="1" parent="1" source="Q8QMjd43RHZUG_M_Kel2-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Q8QMjd43RHZUG_M_Kel2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-16" parent="1" style="swimlane;startSize=30;whiteSpace=wrap;html=1;rounded=1;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="语言模型应用" vertex="1">
+          <mxGeometry height="245" width="350" x="224" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-17" parent="Q8QMjd43RHZUG_M_Kel2-16" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="词索引概率分布&lt;br/&gt;→ 类别分布" vertex="1">
+          <mxGeometry height="50" width="260" x="30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-18" parent="Q8QMjd43RHZUG_M_Kel2-16" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="嵌入向量&lt;br/&gt;→ 多元高斯" vertex="1">
+          <mxGeometry height="50" width="260" x="30" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-19" parent="Q8QMjd43RHZUG_M_Kel2-16" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Dropout mask&lt;br/&gt;→ 伯努利分布" vertex="1">
+          <mxGeometry height="50" width="260" x="30" y="114.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-27" edge="1" parent="1" source="Q8QMjd43RHZUG_M_Kel2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;dashed=1;dashPattern=8 8;" target="Q8QMjd43RHZUG_M_Kel2-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="34" y="240" />
+              <mxPoint x="34" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-28" edge="1" parent="1" source="Q8QMjd43RHZUG_M_Kel2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;dashed=1;dashPattern=8 8;" target="Q8QMjd43RHZUG_M_Kel2-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="314" y="503" />
+              <mxPoint x="194" y="503" />
+              <mxPoint x="194" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8QMjd43RHZUG_M_Kel2-29" edge="1" parent="1" source="Q8QMjd43RHZUG_M_Kel2-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;dashed=1;dashPattern=8 8;" target="Q8QMjd43RHZUG_M_Kel2-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

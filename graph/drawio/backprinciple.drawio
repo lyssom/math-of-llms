@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Backpropagation Intuition">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1"
+                  tooltips="1" connect="1" arrows="1" fold="1"
+                  page="1" pageScale="1" pageWidth="900" pageHeight="600">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ===== Title ===== -->
+        <mxCell id="title" value="反向传播梯度传播原理"
+                style="text;html=1;fontSize=26;fontColor=#FFD700;align=center;"
+                vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Input Layer ===== -->
+        <mxCell id="in1" value="" style="ellipse;fillColor=#5BC0DE;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="in2" value="" style="ellipse;fillColor=#5BC0DE;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="in3" value="" style="ellipse;fillColor=#5BC0DE;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="inputLabel" value="输入层 x"
+                style="text;html=1;fontSize=16;fontColor=#5BC0DE;"
+                vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="120" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Hidden Layer ===== -->
+        <mxCell id="h1" style="ellipse;fillColor=#5CB85C;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="350" y="120" width="55" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="h2" style="ellipse;fillColor=#5CB85C;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="350" y="200" width="55" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="h3" style="ellipse;fillColor=#5CB85C;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="350" y="280" width="55" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="h4" style="ellipse;fillColor=#5CB85C;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="350" y="360" width="55" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Output Layer ===== -->
+        <mxCell id="out1" style="ellipse;fillColor=#D9534F;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="650" y="190" width="55" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="out2" style="ellipse;fillColor=#D9534F;strokeColor=#FFFFFF;strokeWidth=2;"
+                vertex="1" parent="1">
+          <mxGeometry x="650" y="280" width="55" height="55" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="outputLabel" value="输出层 (ℓ+1)"
+                style="text;html=1;fontSize=16;fontColor=#D9534F;"
+                vertex="1" parent="1">
+          <mxGeometry x="630" y="150" width="150" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Connections (Fully Connected) ===== -->
+        <!-- Input to Hidden -->
+        <mxCell id="e1" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in1" target="h1"/>
+        <mxCell id="e2" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in1" target="h2"/>
+        <mxCell id="e3" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in1" target="h3"/>
+        <mxCell id="e4" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in2" target="h1"/>
+        <mxCell id="e5" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in2" target="h2"/>
+        <mxCell id="e6" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in2" target="h4"/>
+        <mxCell id="e7" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in3" target="h2"/>
+        <mxCell id="e8" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in3" target="h3"/>
+        <mxCell id="e9" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="in3" target="h4"/>
+
+        <!-- Hidden to Output -->
+        <mxCell id="e10" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="h1" target="out1"/>
+        <mxCell id="e11" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="h2" target="out1"/>
+        <mxCell id="e12" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="h3" target="out2"/>
+        <mxCell id="e13" style="endArrow=none;strokeColor=#999999;" edge="1" parent="1" source="h4" target="out2"/>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

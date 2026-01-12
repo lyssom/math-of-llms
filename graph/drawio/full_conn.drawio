@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="ZUahq9fQfvZuy5MSnoX4">
+    <mxGraphModel dx="1188" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yME23mTsueN9XAKgdW9s-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="输入层" vertex="1">
+          <mxGeometry height="30" width="80" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="x₁" vertex="1">
+          <mxGeometry height="40" width="40" x="60" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="x₂" vertex="1">
+          <mxGeometry height="40" width="40" x="60" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="x₃" vertex="1">
+          <mxGeometry height="40" width="40" x="60" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="输入向量 x" vertex="1">
+          <mxGeometry height="60" width="100" x="160" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="线性变换1" vertex="1">
+          <mxGeometry height="30" width="80" x="300" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-32" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="偏置 b₁" vertex="1">
+          <mxGeometry height="40" width="120" x="280" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Z₁ = W₁·x + b₁" vertex="1">
+          <mxGeometry height="40" width="120" x="280" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="激活函数1" vertex="1">
+          <mxGeometry height="30" width="80" x="500" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="A₁ = σ(Z₁)" vertex="1">
+          <mxGeometry height="40" width="120" x="480" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-12" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="线性变换2" vertex="1">
+          <mxGeometry height="30" width="80" x="660" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="权重矩阵 W₂" vertex="1">
+          <mxGeometry height="40" width="120" x="640" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-33" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="偏置 b₂" vertex="1">
+          <mxGeometry height="40" width="120" x="640" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Z₂ = W₂·A₁ + b₂" vertex="1">
+          <mxGeometry height="40" width="120" x="640" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="激活函数2" vertex="1">
+          <mxGeometry height="30" width="80" x="860" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="输出 A₂ = f(Z₂)" vertex="1">
+          <mxGeometry height="40" width="120" x="840" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-18" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-19" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-20" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-21" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-5" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-22" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-7" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-23" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-7" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-24" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-9" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-25" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-11" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-26" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-13" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-28" edge="1" parent="1" source="yME23mTsueN9XAKgdW9s-15" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="yME23mTsueN9XAKgdW9s-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yME23mTsueN9XAKgdW9s-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="权重矩阵 W₁" vertex="1">
+          <mxGeometry height="40" width="120" x="280" y="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

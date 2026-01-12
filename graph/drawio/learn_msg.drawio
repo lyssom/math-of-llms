@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="Sd8LoiOhubBRXYKUxYKs">
+    <mxGraphModel dx="1410" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-1" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;rounded=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="CNN特征可视化" vertex="1">
+          <mxGeometry height="280" width="350" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-2" parent="Nhzva_YykTIWRrSsKRX3-1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="输入图像" vertex="1">
+          <mxGeometry height="50" width="350" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-3" parent="Nhzva_YykTIWRrSsKRX3-1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="卷积层1&lt;br/&gt;提取边缘" vertex="1">
+          <mxGeometry height="50" width="350" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-4" parent="Nhzva_YykTIWRrSsKRX3-1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="卷积层2&lt;br/&gt;提取纹理" vertex="1">
+          <mxGeometry height="50" width="350" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-5" parent="Nhzva_YykTIWRrSsKRX3-1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="卷积层3&lt;br/&gt;提取物体部件" vertex="1">
+          <mxGeometry height="50" width="350" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-6" parent="Nhzva_YykTIWRrSsKRX3-1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="特征图逐层可视化" vertex="1">
+          <mxGeometry height="50" width="350" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-7" edge="1" parent="1" source="Nhzva_YykTIWRrSsKRX3-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Nhzva_YykTIWRrSsKRX3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-8" edge="1" parent="1" source="Nhzva_YykTIWRrSsKRX3-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Nhzva_YykTIWRrSsKRX3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-9" edge="1" parent="1" source="Nhzva_YykTIWRrSsKRX3-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Nhzva_YykTIWRrSsKRX3-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-10" edge="1" parent="1" source="Nhzva_YykTIWRrSsKRX3-5" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Nhzva_YykTIWRrSsKRX3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-11" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;rounded=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="NLP嵌入可视化" vertex="1">
+          <mxGeometry height="230" width="350" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-12" parent="Nhzva_YykTIWRrSsKRX3-11" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="输入Token序列" vertex="1">
+          <mxGeometry height="50" width="350" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-13" parent="Nhzva_YykTIWRrSsKRX3-11" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="词嵌入 Embedding" vertex="1">
+          <mxGeometry height="50" width="350" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-14" parent="Nhzva_YykTIWRrSsKRX3-11" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Transformer编码器&lt;br/&gt;多层自注意力" vertex="1">
+          <mxGeometry height="50" width="350" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-15" parent="Nhzva_YykTIWRrSsKRX3-11" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="表示空间可视化&lt;br/&gt;语义相近词靠近" vertex="1">
+          <mxGeometry height="50" width="350" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-16" edge="1" parent="1" source="Nhzva_YykTIWRrSsKRX3-12" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Nhzva_YykTIWRrSsKRX3-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-17" edge="1" parent="1" source="Nhzva_YykTIWRrSsKRX3-13" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Nhzva_YykTIWRrSsKRX3-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhzva_YykTIWRrSsKRX3-18" edge="1" parent="1" source="Nhzva_YykTIWRrSsKRX3-14" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="Nhzva_YykTIWRrSsKRX3-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
