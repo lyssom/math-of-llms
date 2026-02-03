@@ -1,0 +1,48 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Token-level Loss Autoregressive" id="token_loss_diagram">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="input" parent="1" style="rounded=1;fontSize=12;fontFamily=serif;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Input Sequence: x₁, x₂, x₃, …" vertex="1">
+          <mxGeometry height="40" width="200" x="120" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="pred_x1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pred_x1" parent="1" style="rounded=1;fontSize=12;fontFamily=serif;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Pred x₁ → Loss₁" vertex="1">
+          <mxGeometry height="40" width="140" x="120" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pred_x2" parent="1" style="rounded=1;fontSize=12;fontFamily=serif;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Pred x₂ → Loss₂" vertex="1">
+          <mxGeometry height="40" width="140" x="280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pred_x3" parent="1" style="rounded=1;fontSize=12;fontFamily=serif;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Pred x₃ → Loss₃" vertex="1">
+          <mxGeometry height="40" width="140" x="440" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="pred_x1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="pred_x2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="pred_x2" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="pred_x3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avg_loss" parent="1" style="rounded=1;fontSize=12;fontFamily=serif;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="Sequence Loss = (Loss₁ + Loss₂ + Loss₃)/3" vertex="1">
+          <mxGeometry height="40" width="240" x="280" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow_avg1" edge="1" parent="1" source="pred_x1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="avg_loss">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="170" />
+              <mxPoint x="400" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow_avg2" edge="1" parent="1" source="pred_x2" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="avg_loss">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow_avg3" edge="1" parent="1" source="pred_x3" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;labelBackgroundColor=none;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" target="avg_loss">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

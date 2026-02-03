@@ -1,0 +1,272 @@
+<mxfile host="draw.io" agent="MiniMax Agent" version="24.0.2">
+  <diagram id="tensor-diagram" name="张量几何直觉图">
+    <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+      
+      <!-- 背景 -->
+      <mxCell id="bg" value="" style="swimlane;startSize=0;horizontal=0;fillColor=#F8F5F0;strokeColor=none;pointerEvents=0;" vertex="1" collapsed="0" parent="1">
+        <mxGeometry x="0" y="0" width="1200" height="900" as="geometry" />
+      </mxCell>
+      
+      <!-- 标题 -->
+      <mxCell id="title" value="张量几何直觉图：Mode-n 乘积与展开" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;comic=0;strokeWidth=0;fontFamily=SimSun;fontSize=28;fontColor=#3D3D3D;" vertex="1" parent="bg">
+        <mxGeometry x="400" y="30" width="400" height="50" as="geometry" />
+      </mxCell>
+      
+      <!-- 副标题 -->
+      <mxCell id="subtitle" value="以 Mode-1 乘积为例展示完整过程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;comic=0;strokeWidth=0;fontFamily=SimSun;fontSize=18;fontColor=#6B6B6B;" vertex="1" parent="bg">
+        <mxGeometry x="450" y="80" width="300" height="30" as="geometry" />
+      </mxCell>
+      
+      <!-- 第一列：3D 张量 X -->
+      <mxCell id="col1-label" value="① 原始张量 𝒳 ∈ ℝ^{I×J×K}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=16;fontColor=#556B2F;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="80" y="150" width="280" height="35" as="geometry" />
+      </mxCell>
+      
+      <!-- 3D 张量绘制 - 简化版本 -->
+      <mxCell id="tensor-front" value="" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#D4D4D4;strokeColor=#888888;strokeWidth=1;opacity=0.7;" vertex="1" parent="bg">
+        <mxGeometry x="120" y="280" width="120" height="100" as="geometry" />
+      </mxCell>
+      <mxCell id="tensor-top" value="" style="shape=polygon;whiteSpace=wrap;html=1;fillColor=#C0C0C0;strokeColor=#888888;strokeWidth=1;opacity=0.5;points=[[0,0],[0.5,0.25],[1,0],[0.5,0.75]];" vertex="1" parent="bg">
+        <mxGeometry x="120" y="280" width="120" height="50" as="geometry" />
+      </mxCell>
+      <mxCell id="tensor-side" value="" style="shape=polygon;whiteSpace=wrap;html=1;fillColor=#B0B0B0;strokeColor=#888888;strokeWidth=1;opacity=0.5;points=[[0,0],[0.25,0.5],[0.25,1],[0,1]];" vertex="1" parent="bg">
+        <mxGeometry x="240" y="280" width="30" height="100" as="geometry" />
+      </mxCell>
+      
+      <!-- 张量内部网格线 -->
+      <mxCell id="grid-v1" value="" style="line;strokeColor=#999999;strokeWidth=1;opacity=0.4;startSize=10;endSize=10;" edge="1" parent="bg">
+        <mxGeometry x="160" y="280" width="0" height="100" as="geometry" />
+      </mxCell>
+      <mxCell id="grid-v2" value="" style="line;strokeColor=#999999;strokeWidth=1;opacity=0.4;startSize=10;endSize=10;" edge="1" parent="bg">
+        <mxGeometry x="200" y="280" width="0" height="100" as="geometry" />
+      </mxCell>
+      <mxCell id="grid-h1" value="" style="line;strokeColor=#999999;strokeWidth=1;opacity=0.4;startSize=10;endSize=10;" edge="1" parent="bg">
+        <mxGeometry x="120" y="320" width="120" height="0" as="geometry" />
+      </mxCell>
+      <mxCell id="grid-h2" value="" style="line;strokeColor=#999999;strokeWidth=1;opacity=0.4;startSize=10;endSize=10;" edge="1" parent="bg">
+        <mxGeometry x="120" y="360" width="120" height="0" as="geometry" />
+      </mxCell>
+      
+      <!-- Mode-1 切片高亮 -->
+      <mxCell id="slice-highlight" value="𝒳_{i,:,:}" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#556B2F;strokeColor=#3D5C1F;strokeWidth=2;opacity=0.85;" vertex="1" parent="bg">
+        <mxGeometry x="120" y="280" width="120" height="100" as="geometry" />
+      </mxCell>
+      
+      <!-- 切片标注 -->
+      <mxCell id="slice-label" value="Mode-1 切片" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#F8F5F0;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="125" y="320" width="110" height="25" as="geometry" />
+      </mxCell>
+      
+      <!-- Mode-2 切片指示 -->
+      <mxCell id="mode2-slice" value="𝒳_{:,j,:}" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#708090;strokeColor=#556B2F;strokeWidth=2;opacity=0.4;dashed=1;" vertex="1" parent="bg">
+        <mxGeometry x="150" y="280" width="60" height="100" as="geometry" />
+      </mxCell>
+      
+      <!-- Mode-3 切片指示 -->
+      <mxCell id="mode3-slice" value="𝒳_{:,:,k}" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#708090;strokeColor=#556B2F;strokeWidth=2;opacity=0.4;dashed=1;" vertex="1" parent="bg">
+        <mxGeometry x="120" y="300" width="120" height="60" as="geometry" />
+      </mxCell>
+      
+      <!-- 维度标注 -->
+      <mxCell id="dim-i" value="I" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=16;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="180" y="385" width="30" height="25" as="geometry" />
+      </mxCell>
+      <mxCell id="dim-j" value="J" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=16;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="245" y="310" width="30" height="25" as="geometry" />
+      </mxCell>
+      <mxCell id="dim-k" value="K" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=16;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="90" y="285" width="30" height="25" as="geometry" />
+      </mxCell>
+      
+      <!-- 第二列标签 -->
+      <mxCell id="col2-label" value="② Mode-1 展开 𝒳_{(1)} ∈ ℝ^{I×JK}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=16;fontColor=#556B2F;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="480" y="150" width="280" height="35" as="geometry" />
+      </mxCell>
+      
+      <!-- 展开矩阵容器 -->
+      <mxCell id="matrix-container" value="" style="swimlane;startSize=0;horizontal=0;fillColor=#F8F5F0;strokeColor=#556B2F;strokeWidth=2;opacity=1;" vertex="1" parent="bg">
+        <mxGeometry x="480" y="200" width="240" height="200" as="geometry" />
+      </mxCell>
+      
+      <!-- 矩阵网格背景 -->
+      <mxCell id="matrix-cells" value="" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#E8E8E0;strokeColor=#B0B0A0;strokeWidth=1;opacity=0.9;" vertex="1" parent="matrix-container">
+        <mxGeometry x="20" y="30" width="200" height="150" as="geometry" />
+      </mxCell>
+      
+      <!-- 矩阵内部格子线 -->
+      <mxCell id="cell-grid-v1" value="" style="line;strokeColor=#C0C0B0;strokeWidth=1;startSize=10;endSize=10;" edge="1" parent="matrix-container">
+        <mxGeometry x="65" y="30" width="0" height="150" as="geometry" />
+      </mxCell>
+      <mxCell id="cell-grid-v2" value="" style="line;strokeColor=#C0C0B0;strokeWidth=1;startSize=10;endSize=10;" edge="1" parent="matrix-container">
+        <mxGeometry x="110" y="30" width="0" height="150" as="geometry" />
+      </mxCell>
+      <mxCell id="cell-grid-v3" value="" style="line;strokeColor=#C0C0B0;strokeWidth=1;startSize=10;endSize=10;" edge="1" parent="matrix-container">
+        <mxGeometry x="155" y="30" width="0" height="150" as="geometry" />
+      </mxCell>
+      <mxCell id="cell-grid-h1" value="" style="line;strokeColor=#C0C0B0;strokeWidth=1;startSize=10;endSize=10;" edge="1" parent="matrix-container">
+        <mxGeometry x="20" y="67" width="200" height="0" as="geometry" />
+      </mxCell>
+      <mxCell id="cell-grid-h2" value="" style="line;strokeColor=#C0C0B0;strokeWidth=1;startSize=10;endSize=10;" edge="1" parent="matrix-container">
+        <mxGeometry x="20" y="105" width="200" height="0" as="geometry" />
+      </mxCell>
+      <mxCell id="cell-grid-h3" value="" style="line;strokeColor=#C0C0B0;strokeWidth=1;startSize=10;endSize=10;" edge="1" parent="matrix-container">
+        <mxGeometry x="20" y="142" width="200" height="0" as="geometry" />
+      </mxCell>
+      
+      <!-- 矩阵标注 -->
+      <mxCell id="matrix-dim-i" value="I" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=18;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="matrix-container">
+        <mxGeometry x="100" y="5" width="40" height="25" as="geometry" />
+      </mxCell>
+      <mxCell id="matrix-dim-jk" value="J×K" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=18;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="matrix-container">
+        <mxGeometry x="220" y="75" width="50" height="50" as="geometry" />
+      </mxCell>
+      
+      <!-- 第三列标签 -->
+      <mxCell id="col3-label" value="③ Mode-1 乘积 𝒴 = 𝒳 ×₁ U" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=16;fontColor=#556B2F;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="840" y="150" width="280" height="35" as="geometry" />
+      </mxCell>
+      
+      <!-- 矩阵 U 绘制 -->
+      <mxCell id="matrix-u" value="U" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#556B2F;strokeColor=#3D5C1F;strokeWidth=2;opacity=0.85;rounded=0;" vertex="1" parent="bg">
+        <mxGeometry x="880" y="210" width="60" height="150" as="geometry" />
+      </mxCell>
+      
+      <!-- U 维度标注 -->
+      <mxCell id="u-dim-r" value="R×I" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=14;fontColor=#F8F5F0;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="885" y="180" width="50" height="25" as="geometry" />
+      </mxCell>
+      
+      <!-- 乘积结果矩阵 -->
+      <mxCell id="matrix-result" value="" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#E8E8E0;strokeColor=#556B2F;strokeWidth=2;opacity=0.9;" vertex="1" parent="bg">
+        <mxGeometry x="980" y="210" width="120" height="150" as="geometry" />
+      </mxCell>
+      
+      <!-- 乘积结果维度 -->
+      <mxCell id="result-dim" value="R×JK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=18;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="985" y="365" width="110" height="30" as="geometry" />
+      </mxCell>
+      
+      <!-- 折回后的 3D 张量 Y -->
+      <mxCell id="tensor-y" value="𝒴" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#708090;strokeColor=#556B2F;strokeWidth=2;opacity=0.7;rounded=5;" vertex="1" parent="bg">
+        <mxGeometry x="880" y="480" width="220" height="180" as="geometry" />
+      </mxCell>
+      
+      <!-- Y 维度标注 -->
+      <mxCell id="y-dim" value="ℝ^{R×J×K}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=16;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="930" y="665" width="120" height="30" as="geometry" />
+      </mxCell>
+      
+      <!-- Y 标签 -->
+      <mxCell id="y-label" value="折回张量" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#F8F5F0;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="950" y="550" width="80" height="25" as="geometry" />
+      </mxCell>
+      
+      <!-- 箭头 1: 张量到切片展开 -->
+      <mxCell id="arrow1" value="" style="endArrow=classic;html=1;strokeColor=#556B2F;strokeWidth=2;opacity=0.8;startSize=15;endSize=15;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="bg">
+        <mxGeometry x="270" y="330" width="210" height="100" as="geometry">
+          <mxPoint x="270" y="330" as="sourcePoint" />
+          <mxPoint x="480" y="330" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+      
+      <!-- 展开标注 -->
+      <mxCell id="unfold-label" value="展开" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#556B2F;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="350" y="305" width="60" height="25" as="geometry" />
+      </mxCell>
+      
+      <!-- 箭头 2: U 乘以展开矩阵 -->
+      <mxCell id="arrow2" value="" style="endArrow=classic;html=1;strokeColor=#556B2F;strokeWidth=2;opacity=0.8;startSize=15;endSize=15;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="bg">
+        <mxGeometry x="940" y="285" width="100" height="100" as="geometry">
+          <mxPoint x="940" y="285" as="sourcePoint" />
+          <mxPoint x="980" y="285" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+      
+      <!-- 乘积标注 -->
+      <mxCell id="multiply-label" value="×" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=28;fontColor=#556B2F;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="955" y="270" width="30" height="40" as="geometry" />
+      </mxCell>
+      
+      <!-- 箭头 3: 矩阵折回张量 -->
+      <mxCell id="arrow3" value="" style="endArrow=classic;html=1;strokeColor=#556B2F;strokeWidth=2;opacity=0.8;startSize=15;endSize=15;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="bg">
+        <mxGeometry x="1040" y="360" width="100" height="100" as="geometry">
+          <mxPoint x="1040" y="360" as="sourcePoint" />
+          <mxPoint x="1040" y="480" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+      
+      <!-- 折回标注 -->
+      <mxCell id="fold-label" value="折回" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#556B2F;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="1020" y="400" width="50" height="25" as="geometry" />
+      </mxCell>
+      
+      <!-- 底部说明区域 -->
+      <mxCell id="desc-area" value="" style="swimlane;startSize=0;horizontal=0;fillColor=#F0EDE8;strokeColor=#B0A090;strokeWidth=1;opacity=0.8;" vertex="1" parent="bg">
+        <mxGeometry x="80" y="720" width="1040" height="150" as="geometry" />
+      </mxCell>
+      
+      <!-- 说明文字 -->
+      <mxCell id="desc1" value="• Mode-n 切片：将张量沿第 n 维切取，得到一系列矩阵" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#4A4A4A;" vertex="1" parent="desc-area">
+        <mxGeometry x="30" y="20" width="300" height="30" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="desc2" value="• Mode-n 展开 (Matricization)：将张量重塑为矩阵，维度为 n × (其余维度的乘积)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#4A4A4A;" vertex="1" parent="desc-area">
+        <mxGeometry x="380" y="20" width="320" height="30" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="desc3" value="• Mode-n 乘积：张量与矩阵相乘，等价于展开后矩阵相乘再折回" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#4A4A4A;" vertex="1" parent="desc-area">
+        <mxGeometry x="750" y="20" width="280" height="30" as="geometry" />
+      </mxCell>
+      
+      <!-- 公式区域 -->
+      <mxCell id="formula1" value="𝒴 = 𝒳 ×₁ U" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=22;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="desc-area">
+        <mxGeometry x="440" y="70" width="150" height="40" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="formula2" value="⇕" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=28;fontColor=#556B2F;fontStyle=1;" vertex="1" parent="desc-area">
+        <mxGeometry x="410" y="65" width="30" height="50" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="formula3" value="𝒴_{(1)} = U · 𝒳_{(1)}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=22;fontColor=#3D3D3D;fontStyle=1;" vertex="1" parent="desc-area">
+        <mxGeometry x="620" y="70" width="200" height="40" as="geometry" />
+      </mxCell>
+      
+      <!-- 装饰线条 -->
+      <mxCell id="deco-line1" value="" style="line;strokeColor=#B0A090;strokeWidth=1;opacity=0.5;startArrow=none;endArrow=none;startSize=10;endSize=10;" edge="1" parent="desc-area">
+        <mxGeometry x="50" y="55" width="300" height="0" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="deco-line2" value="" style="line;strokeColor=#B0A090;strokeWidth=1;opacity=0.5;startArrow=none;endArrow=none;startSize=10;endSize=10;" edge="1" parent="desc-area">
+        <mxGeometry x="400" y="55" width="280" height="0" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="deco-line3" value="" style="line;strokeColor=#B0A090;strokeWidth=1;opacity=0.5;startArrow=none;endArrow=none;startSize=10;endSize=10;" edge="1" parent="desc-area">
+        <mxGeometry x="730" y="55" width="280" height="0" as="geometry" />
+      </mxCell>
+      
+      <!-- 图例 -->
+      <mxCell id="legend" value="图例" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#6B6B6B;fontStyle=1;" vertex="1" parent="bg">
+        <mxGeometry x="80" y="420" width="60" height="25" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="legend-item1" value="■ 原始张量" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=12;fontColor=#6B6B6B;" vertex="1" parent="bg">
+        <mxGeometry x="100" y="450" width="100" height="20" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="legend-item2" value="■ Mode-n 切片/展开" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=12;fontColor=#556B2F;" vertex="1" parent="bg">
+        <mxGeometry x="100" y="475" width="120" height="20" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="legend-item3" value="■ 乘积矩阵 U" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=12;fontColor=#556B2F;" vertex="1" parent="bg">
+        <mxGeometry x="100" y="500" width="100" height="20" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="legend-item4" value="■ 结果张量" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=12;fontColor=#708090;" vertex="1" parent="bg">
+        <mxGeometry x="100" y="525" width="100" height="20" as="geometry" />
+      </mxCell>
+      
+    </root>
+  </diagram>
+</mxfile>

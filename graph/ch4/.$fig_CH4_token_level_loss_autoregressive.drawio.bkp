@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Token-level Loss Autoregressive" id="token_loss_diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Input sequence -->
+        <mxCell id="input" value="Input Sequence: x₁, x₂, x₃, …" style="rounded=1;fillColor=#FAF9F6;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="120" y="20" width="200" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Autoregressive arrows -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="input" target="pred_x1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Token predictions -->
+        <mxCell id="pred_x1" value="Pred x₁ → Loss₁" style="rounded=1;fillColor=#DCE6F1;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="120" y="100" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pred_x2" value="Pred x₂ → Loss₂" style="rounded=1;fillColor=#DCE6F1;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="280" y="100" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pred_x3" value="Pred x₃ → Loss₃" style="rounded=1;fillColor=#DCE6F1;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="440" y="100" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows between predictions (autoregressive) -->
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="pred_x1" target="pred_x2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="pred_x2" target="pred_x3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Average loss -->
+        <mxCell id="avg_loss" value="Sequence Loss = (Loss₁ + Loss₂ + Loss₃)/3" style="rounded=1;fillColor=#FAF9F6;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="280" y="200" width="240" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows to avg loss -->
+        <mxCell id="arrow_avg1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="pred_x1" target="avg_loss">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow_avg2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="pred_x2" target="avg_loss">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow_avg3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="pred_x3" target="avg_loss">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

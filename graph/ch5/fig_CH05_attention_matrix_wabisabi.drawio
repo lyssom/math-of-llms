@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Attention Matrix + Flow" id="attention_matrix_flow">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Q -->
+        <mxCell id="Q" value="Q ∈ ℝ^{seq×d}" style="rounded=1;fillColor=#DCE6F1;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- K -->
+        <mxCell id="K" value="K ∈ ℝ^{seq×d}" style="rounded=1;fillColor=#DCE6F1;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- V -->
+        <mxCell id="V" value="V ∈ ℝ^{seq×d}" style="rounded=1;fillColor=#DCE6F1;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- QK^T -->
+        <mxCell id="QK" value="QKᵀ ∈ ℝ^{seq×seq}" style="rounded=1;fillColor=#FAF9F6;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="220" y="90" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Softmax -->
+        <mxCell id="softmax" value="Softmax(QKᵀ) ∈ ℝ^{seq×seq}" style="rounded=1;fillColor=#DCE6F1;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="400" y="90" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Attention Output -->
+        <mxCell id="output" value="Attention = Softmax(QKᵀ)V ∈ ℝ^{seq×d}" style="rounded=1;fillColor=#FAF9F6;strokeColor=#556B2F;fontSize=12;fontFamily=serif;" vertex="1" parent="1">
+          <mxGeometry x="600" y="90" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="arrow_QK" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="Q" target="QK">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow_K" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="K" target="QK">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow_softmax" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="QK" target="softmax">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow_V" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="V" target="output">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow_output" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#556B2F;endArrow=classic;" edge="1" parent="1" source="softmax" target="output">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
